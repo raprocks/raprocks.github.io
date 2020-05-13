@@ -1,0 +1,44 @@
+# Setup
+title: RAP's Blog
+tagline: Where You Learn Things
+url: https://raprocks.github.io/
+paginate: 1
+baseurl: ""
+permalink: :title/
+
+kramdown:
+    footnote_backlink: "&#10548;"
+
+# Gems
+plugins:
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-target-blank
+
+# Optimize Jekyll
+exclude:
+  - .editorconfig
+  - .git
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Specify the author for blog posts
+author:
+  name: Rohit Patil
+  email: rahulhimesh09@gmail.com
+  facebook_id: rohit.rap.9401
+  instagram_id: __rap_rocks__
+  github_id: raprocks
+  telegram_id: raprocks
+
+# customs
+github:
+  repo: https://github.com/raprocks/raprocks.github.io

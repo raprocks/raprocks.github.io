@@ -1,0 +1,89 @@
+// Masthead
+//
+// The style of the sites title and optional secondary description.
+
+.masthead {
+  padding-top:    1rem;
+  padding-bottom: 1rem;
+  margin-bottom: -1rem;
+  text-align: center;
+}
+
+.masthead-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: $body-color;
+  position: relative;
+  font-size: 4em;
+  text-align: center;
+  padding-right: 12px;
+  
+@media (prefers-color-scheme: dark) {
+  color: $body-color-dark;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  small {
+    font-size: 50%;
+    font-weight: 400;
+    opacity: .5;
+  }
+}
+
+nav {
+  display: block;
+  font-size: 100%;
+  font-weight: 500;
+  color: $body-color;
+@media (prefers-color-scheme: dark) {
+  color: $body-color-dark;
+  }
+  
+.navlist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  }
+  .navlist li {
+    display: inline;
+    list-style: none;
+	padding-left: 0;
+    padding-right: 12px;
+	margin: 0;
+    }
+}
+
+.front {
+	position: relative;
+	top:0px;
+	height: 55vh;
+	text-align: center;
+}
+.front h1 {
+	font-size:5em;
+	top:0px;
+	
+}
+.front h3 {
+	font-size:2em;
+	top:0px;
+}
+.front span {
+	color: #55555c;
+	font-size:5em;
+	top:0px;
+	font-weight: bold;
+
+	@media (prefers-color-scheme: dark) {
+		color: #d0f6db;
+	}
+}
+
+.front {
+	position:relative;
+	top:0px;
+}

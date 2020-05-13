@@ -1,0 +1,31 @@
+// Site structure
+
+.container {
+  max-width: 38rem;
+  padding-left:  1.5rem;
+  padding-right: 1.5rem;
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+footer {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 90%;
+}
+
+ul.social {
+	list-style-type: none;
+	position: relative;
+	right: 1.5rem;
+	svg {
+		height: 1.5rem;
+		width: 1.5rem;
+	}
+}
+
+ul.social li {
+	display: inline-block;
+	padding: 10px;
+}

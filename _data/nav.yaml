@@ -1,0 +1,8 @@
+- navitem: Home
+  url: /
+- navitem: Tags
+  url: /tags
+- navitem: Categories
+  url: /categories
+- navitem: About
+  url: /about
