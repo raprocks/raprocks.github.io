@@ -1,0 +1,22 @@
+<div class="postlist">
+{% if site.data.postlist.postlist[0] %}
+  {% for item in site.data.postlist.postlist %}
+    <div class="category-title">{{ item.group }}</div>
+      {% if item.posts[0] %}
+        <ul class="sublist1">
+          {% for entry in item.posts %}
+              <li> {% if entry.status=="coming soon" %}<span class="soon">Coming Soon</span>{% endif %}<a href={% if entry.status=="coming soon" %}"#"{% else %}"{{ entry.url }}" {% endif %}>{{ entry.title }}</a>
+                {% if entry.micropost[0] %}
+                  <ul class="sublist2">
+                  {% for subentry in entry.micropost %}
+                      <li><a href="{{ subentry.url }}">{{ subentry.title }}</a></li>
+                  {% endfor %}
+                  </ul>
+                {% endif %}
+              </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endfor %}
+{% endif %}
+</div>
