@@ -3,87 +3,78 @@
 // The style of the sites title and optional secondary description.
 
 .masthead {
-  padding-top:    1rem;
-  padding-bottom: 1rem;
-  margin-bottom: -1rem;
-  text-align: center;
+	padding: 3rem 0 1.5rem;
+	text-align: center;
 }
 
 .masthead-title {
-  margin-top: 0;
-  margin-bottom: 20px;
-  color: $body-color;
-  position: relative;
-  font-size: 4em;
-  text-align: center;
-  padding-right: 12px;
-  
-@media (prefers-color-scheme: dark) {
-  color: $body-color-dark;
-  }
-
-  a {
-    color: inherit;
-  }
-
-  small {
-    font-size: 50%;
-    font-weight: 400;
-    opacity: .5;
-  }
-}
-
-nav {
-  display: block;
-  font-size: 100%;
-  font-weight: 500;
-  color: $body-color;
-@media (prefers-color-scheme: dark) {
-  color: $body-color-dark;
-  }
-  
-.navlist {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  }
-  .navlist li {
-    display: inline;
-    list-style: none;
-	padding-left: 0;
-    padding-right: 12px;
-	margin: 0;
-    }
-}
-
-.front {
+	margin-top: 0;
+	margin-bottom: 20px;
+	color: $body-color;
 	position: relative;
-	top:0px;
-	height: 55vh;
+	font-size: 4em;
 	text-align: center;
-}
-.front h1 {
-	font-size:5em;
-	top:0px;
-	
-}
-.front h3 {
-	font-size:2em;
-	top:0px;
-}
-.front span {
-	color: #55555c;
-	font-size:5em;
-	top:0px;
-	font-weight: bold;
+	padding-right: 12px;
 
 	@media (prefers-color-scheme: dark) {
-		color: #d0f6db;
+		color: $body-color-dark;
+	}
+
+	a {
+		color: inherit;
+	}
+
+	span {
+		font-size: 1.5rem;
+		display: block;
+		margin-top: 0.25rem;
+		font-weight: 400;
+		color: #555;
 	}
 }
 
-.front {
-	position:relative;
-	top:0px;
+nav {
+	display: block;
+	font-size: 1rem;
+	padding: 1rem 0;
+	font-weight: 500;
+	color: $body-color;
+	border-bottom: 2px solid #555;
+	@media (prefers-color-scheme: dark) {
+		color: $body-color-dark;
+	}
+
+	.navlist {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+
+		li {
+			display: inline-block;
+		}
+
+		li + li {
+			margin-left: 0.75rem;
+		}
+	}
+}
+
+// Hero
+
+.hero {
+	padding: 0.75rem 0;
+	text-align: center;
+
+	> * + * {
+		margin-top: 1rem;
+	}
+
+	.hi,
+	.you {
+		font-size: 5rem;
+		font-weight: 700;
+		margin: 0;
+		line-height: 1.25;
+	}
 }
