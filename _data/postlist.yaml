@@ -1,0 +1,6 @@
+postlist:
+  - group: Termux - Lets Start Coding on your Android Device
+    posts:
+      - title: Let's Begin
+        status: coming soon
+        url: /termux/lets-begin.html
