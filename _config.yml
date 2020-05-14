@@ -4,7 +4,7 @@ tagline: Where You Learn Things
 url: https://raprocks.github.io/
 paginate: 1
 baseurl: ""
-permalink: :title/
+permalink: :categories/:title:output_ext
 
 kramdown:
     footnote_backlink: "&#10548;"
