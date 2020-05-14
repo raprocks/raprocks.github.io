@@ -63,6 +63,8 @@ nav {
 // Hero
 
 .hero {
+	position:relative;
+	top:-2em;
 	padding: 0.75rem 0;
 	text-align: center;
 
@@ -77,4 +79,35 @@ nav {
 		margin: 0;
 		line-height: 1.25;
 	}
+}
+
+// Postlist
+.postlist {
+	border-top: 2px solid #555;
+	margin-top: 1em;
+	padding-top:2em;
+	font-size:2em;
+}
+
+.postlist .category-title {
+	font-size: 0.9em;
+}
+
+.postlist .category-title::before {
+	content:"•"
+}
+
+ul.sublist1 {
+	list-style-type: "••";
+	list-style-position: inside;
+
+	li {
+		font-size: 0.7em;
+		padding-left:20px;
+	}
+}
+
+ul.sublist2 {
+	list-style-type: "•••";
+	list-style-position:inside;
 }
