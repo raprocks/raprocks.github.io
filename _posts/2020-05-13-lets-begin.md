@@ -6,14 +6,13 @@ tags: [Termux, coding on android]
 last_modified_at: 2019-05-14
 ---
 
-So You want to learn coding but don't know where to start. and above all of this you are in a bigger problem, You dont have a personal computer to code on. **Dont Worry** is what i will say to you. Until you got your Ambition to do something you can do it in any Conditions possible. Today i will introduce to you a very important tool for Android devices that i use on daily basis. Infact this whole site and even this post is being written on the tool itself on my Android Device.
+So You want to learn coding, but don't know where to start. And above all of this you are in a bigger problem, You don't have a personal computer to code on. **Dont Worry** is what I will say to you. Until you got your Ambition to do something you can do it in any Conditions possible. Today I will introduce to you a very important tool for Android devices that I use on a daily basis. In fact, this whole site and even this post are being written on the tool itself on my Android Device.
 <figure>
 	<img src="/assets/images/lets-begin1.jpg" alt="termux-lets-begin">
 	<figcaption> screenshot taken while i was constructing this post</figcaption>
 </figure>
 
-Even i Dont have a PC myself(don't know when you reading this though. check [about](/about)), So primarily i am working on my mobile. Obvioulsy i have to compensate some things. like i dont get to use a fully fledged IDE for coding and stuff **But** my phone does the things.  
-so to give you an overview what we are going to do, as you read and follow along, is make your phone into a workable setup for basic functions like for a beginner friendly tasks. 
+Even I Don't have a PC myself (don't know when you are reading this though. Check [about] (/about)), So, primarily I am working on my mobile. Obviously I have to compensate, some things. Like I don't get to use a fully fledged IDE for coding and stuff **But** my phone does the things.   So to give you an overview what we are going to do, as you read and follow along, is make your phone into a workable setup for basic functions like for a beginner friendly tasks. 
 
 # Termux
 **Termux** is a **Terminal Emulator** and **Linux Environment**. As per the description on Google Play Store
@@ -31,11 +30,11 @@ And this is True. The packages available on termux are really high in number. I'
 
 To get a full list you can visit the [Termux Package Repo](https://github.com/termux/termux-packages/blob/master/README.md#project-structure).
 
-Termux's default terminal is bash. hence if you are a total beginner you also get to learn the workings of Linux itself as the commands in Termux are mostly same as that in the terminals on desktop Linux.
+Termux's default terminal is bash. Hence if you are a total beginner, you also get to learn the workings of Linux itself as the commands in Termux are mostly same as that in the terminals on desktop Linux.
 
 
 ## Installation
- there are 2 ways to Install Termux. The most simple way will be to visit the Google Play Store and download it but the alternative from FDroid has its own advantages of being Free.
+ There are 2 ways to Install Termux. The most simple way will be visiting the Google Play Store and download it, but the alternative from FDroid has its own advantages of being Free.
 <p class="message-yellow"><small><b>Warning!</b> This is a sentence inside of a message box.</small></p>
 #### From The Google Play Store.
 1. You Can simply Follow the link [Here](https://play.google.com/store/apps/details?id=com.termux) to install the app.
@@ -50,13 +49,13 @@ Termux's default terminal is bash. hence if you are a total beginner you also ge
 1. To download Termux visit [Here](https://f-droid.org/en/packages/com.termux/). Scroll down to find the download button for the latest version and download The Apk. 
 2. Termux:API can be downloaded [here](https://f-droid.org/en/packages/com.termux.api/).
 3. Termux:Styling can be downloaded [here](https://f-droid.org/en/packages/com.termux.styling/) following the same instruction.
-4. The downloaded Apks should be installed and just opening them in filemanager should suffice and you will be treated by the instructions. Just follow them and you will be good to go.  
+4. The downloaded Apks should be installed and just opening them in file manager should suffice and you will be treated by the instructions. Just follow them and you will be good to go.  
 
 
 So now we have installed all the apps required. Just double check that you see a Termux Icon and You are Done. The other 2 apps dont have a launcher icon as they act like plugins to the main apps so dont be alarmed if you dont see their icons.
 
 ## Initialization
-Just Open Termux and yoi will be greeted by a Installing message. Just let it finish and you will see a message on the screen. now what you see is the most basic terminal window without any customization. lets see what you have here.  
+Just Open Termux and you will be greeted by a Installing message. Just let it finish and you will see a message on the screen. Now what you see is the most basic terminal window without any customization. Lets see what you have here
 
 
 <figure>
@@ -64,9 +63,9 @@ Just Open Termux and yoi will be greeted by a Installing message. Just let it fi
 	<figcaption> Various components in Termux.</figcaption>
 </figure>
 
-as you can see, we have a bunch of keys like the Ctrl, Alt, Tab and the Esc button. We will customize and add to them later on in this post. These are very important keys and we need them during operations done on the terminal.  
+As you can see, we have a bunch of keys like the Ctrl, Alt, Tab and the Esc button. We will customize and add to them later on in this post. These are very important keys and we need them during operations done on the terminal.  
 If you swipe from the left edge of the screen towards the right side you will see the **Keyboard** and **New Session** buttons  
-as the name suggests the Keyboard button is used to turn the input from the keyboard on and off by simply vanishing the keyboard form the screen and making it appear. This is helpful when tapping on the screen wont make the keyboard appear for some reason.  
+As the name suggests the Keyboard button is used to turn the input from the keyboard on and off by simply vanishing the keyboard form the screen and making it appear. This is helpful when tapping on the screen wont make the keyboard appear for some reason.  
 The New Session button is used to, Create New Sessions, of the terminal which are totally independantly functioning. This is useful to edit multiple files on the go instead of closing and reopening or to run an instance of a server in the background. You can rename the sessions to make them more identifiable.
 
 ## Sessions
