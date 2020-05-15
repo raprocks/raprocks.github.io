@@ -36,7 +36,7 @@ Termux's default terminal is bash. hence if you are a total beginner you also ge
 
 ## Installation
  there are 2 ways to Install Termux. The most simple way will be to visit the Google Play Store and download it but the alternative from FDroid has its own advantages of being Free.
-<span class="warning"> 
+<p class="message-yellow"><small><b>Warning!</b> This is a sentence inside of a message box.</small></p>
 #### From The Google Play Store.
 1. You Can simply Follow the link [Here](https://play.google.com/store/apps/details?id=com.termux) to install the app.
 2. If you need to interact with your phones features like starting the flashlight, you will need to install a separate app named [Termux:API](https://play.google.com/store/apps/details?id=com.termux.api).
