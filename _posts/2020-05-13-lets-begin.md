@@ -3,16 +3,16 @@ layout: post
 title: Termux • Lets-Begin
 categories: [termux]
 tags: [Termux, coding on android]
-last_modified_at: 2019-05-14
+last_modified_at: 2019-05-16
 ---
 
-So You want to learn coding, but don't know where to start. And above all of this you are in a bigger problem, You don't have a personal computer to code on. **Dont Worry** is what I will say to you. Until you got your Ambition to do something you can do it in any Conditions possible. Today I will introduce to you a very important tool for Android devices that I use on a daily basis. In fact, this whole site and even this post are being written on the tool itself on my Android Device.
+So You want to learn coding, but don't know where to start. And above all of this you are in a bigger problem, You don't have a personal computer to code on. **Dont Worry** is what I will say to you. Until you got your Ambition to do something you can do it in any Conditions possible. Today I will introduce to you a very important tool for Android devices that I use on a daily basis. In fact, this whole site and even this post is being written on the tool itself on my Android Device.
 <figure>
 	<img src="/assets/images/lets-begin1.jpg" alt="termux-lets-begin">
 	<figcaption> screenshot taken while i was constructing this post</figcaption>
 </figure>
 
-Even I Don't have a PC myself (don't know when you are reading this though. Check [about] (/about)), So, primarily I am working on my mobile. Obviously I have to compensate, some things. Like I don't get to use a fully fledged IDE for coding and stuff **But** my phone does the things.   So to give you an overview what we are going to do, as you read and follow along, is make your phone into a workable setup for basic functions like for a beginner friendly tasks. 
+Even I Don't have a PC myself (don't know when you are reading this though. Check [about] (/about)), So, primarily I am working on my mobile. Obviously I have to compensate, some things. Like I don't get to use a fully fledged IDE for coding and stuff **But** my phone does the things.   So to give you an overview what we are going to do, as you read and follow along, is convert your phone into a workable setup for basic functions like for a beginner friendly tasks. 
 
 # Termux
 **Termux** is a **Terminal Emulator** and **Linux Environment**. As per the description on Google Play Store
@@ -35,7 +35,9 @@ Termux's default terminal is bash. Hence if you are a total beginner, you also g
 
 ## Installation
  There are 2 ways to Install Termux. The most simple way will be visiting the Google Play Store and download it, but the alternative from FDroid has its own advantages of being Free.
-<p class="message-yellow"><small><b>Warning!</b> This is a sentence inside of a message box.</small></p>
+<p class="message red">Never install a Mix of apps.</p>
+<p class="message red"> Either install the whole set from the Google Play Store or from the FDroid repo. </p>
+
 #### From The Google Play Store.
 1. You Can simply Follow the link [Here](https://play.google.com/store/apps/details?id=com.termux) to install the app.
 2. If you need to interact with your phones features like starting the flashlight, you will need to install a separate app named [Termux:API](https://play.google.com/store/apps/details?id=com.termux.api).
@@ -83,3 +85,129 @@ echo "extra-keys = [['ESC','/','-','HOME','UP','END'],['TAB','CTRL','ALT','LEFT'
 you can customize and experiment with the positioning of these keys by moving their position in the command and replacing them with others from the list [Here](https://wiki.termux.com/wiki/Touch_Keyboardx)
 
 also as you may have noticed till now that your keyboard is not giving you any suggestions and the auto-complete is not working so to use these features you need to swipe the buttons on the screen (the button list above the keyboard ) towards left. you will see a text box and there you have it, all your keyboard features have come back.
+
+# Installing Packages
+To Install Packages in a linux system you need a program which is called package manager. Ubuntu has apt(aptitude package manager) as its package manager, debian has dpkg(debian package management system), pacman for archlinux, yum for RedHat and many more. Hence Termux has its own named `pkg` and alternatively it also has `apt` & `apt-get`, morever if you have `*.deb` packages you also have dpkg at your disposal. `pkg` is a wrapper for apt meaning it is a simple to use solution but in the background it works like `apt`.so lets run the pkg command once and see what we get.
+<figure>
+	<img src="/assets/images/lets-begin4.jpg">
+	<figcaption>Results after running `pkg` command</figcaption>
+</figure>
+
+Don't think something is wrong. This is just there to give you help. So from the output we can see that we have a few commands including `pkg install`, `pkg upgrade`, etc., so lets first upgrade the stock packages to latest version by doing `pkg upgrade`. you will see the repo-data being updated and then you will be asked weather you want to install the packages or not. Typing in `y` and pressing enter will lead to the package's installation. 
+
+Similarly you can install packages by doing `pkg install <package>`. 
+
+<p class="message green"><b>Quick Tip! </b> do `pkg search {package}` if you get an error after trying to install a package and it says could not locate . </p>
+
+Uninstalling packages works the same way. just do `pkg uninstall <package>` and it will be uninstalled after a confirmation.
+
+To list all packages available just type `pkg list-all/list-installed` to get list of all available apckages or installed packages.
+
+# Basic Commands for Linux Terminal.
+Working on a terminal, you cannot use a GUI(Graphical User Interface) and it is not at all easy to javigate between folders or open files to edit them. Hence, We need a basic understanding of Terminal Commands.
+
+* clear
+	: clears your terminal screen and provides you with a clean terminal window.
+	: usage `clear`
+	: no arguments
+* cd
+	: the Change Directory command 
+	: single argument - a path to a **directory**. not a **file**.
+	: usage `cd <relative/absolute path to the file>`
+	: usage without an argument leads to changing of working directory to the value of $HOME varible.
+* pwd
+	: The Print Working Directory command.
+	: Prints the absolute path of the current working directory.
+* ls 
+	: the List command
+	: used to list all files and folders in the current working directory or the directory provided as argument.
+	: single or no argument
+	: usage `ls <relative/absolute path to the directory `
+* mkdir
+	: command to create a directory
+	: takes a single argument for the path of directory to be made.
+	: cannot create a file, for making a file use `touch`.
+	: usage `mkdir <relative/absolute path of directory to be made>`
+	: directory and folder are terms used interchangeably and often mean the same.
+* touch
+	: the command to create an empty file
+	: takes a single argument for the path of file to be made.
+	: cannot create directories, for creating directories use `mkdir`.
+	: usage `touch <relative/absolute path of file to be made with extension>`
+	: remember that it creates empty files and to put data in it we need to use other commands.
+
+
+# Paths
+As we are working on an Android Device the file paths are different. We cannot simply go to internal memory or external memory from your current working directory. This is where you need to have the knowledge of paths of Android file system. To navigate among directories you need to use the `cd` command. 
+The root Directory for all Storages is `/storage/`
+### Relative and Absolute Paths
+So Paths are, as the name suggests, Paths leading to a specific directories or files. There are 2 types of Paths 
+* **Relative**
+* **Absolute**  
+
+so lets understand this through an example. here we have a tree representation of a python package folder on my internal memory which we will refer to as `base` for time being.   
+so the absolute path of the folder here is as shown by the `pwd` command is `/storage/emulated/0/spotidnldr`. so from now onwards for this example we will consider `/storage/emulated/0/` as base.  
+Hence the Absolute Path is `base/spotidnldr`.
+```bash
+$ pwd 
+/storage/emulated/0/spotidnldr
+
+$ tree
+.
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── LICENSE
+├── README.md
+├── cover.jpg
+├── gist
+├── setup.py
+├── spot.py
+├── spotidnldr
+│   ├── __init__.py
+│   ├── clifi.py
+│   ├── converter.py
+│   ├── cover_download.py
+│   ├── downloader.py
+│   ├── env_setup.py
+│   ├── genius_lyrixer.py
+│   ├── spot.py
+│   ├── tag_embedder.py
+│   └── youtube_search.py
+├── termux_setup.sh
+└── web.py
+```
+
+now all of the files inside can be accessed by Absolute Paths and Relative Paths.
+Absolute Paths are not in any way relative. To access any file in an Absolute manner You will have to type in the whole path of `base` and then type in the path of the file. Hence to access the spotidnldr folder Absolutely we will need to give full path i.e, `/storage/emulated/0/spotidnldr/spotidnldr/` 
+But Relatively this folder is just one level above our current working directory. Relatuvely we use 2 main representations. 
+* .
+	: a single full stop represents the current folder
+	: when you do `cd .` with "." as an argument it will lead you to the same folder.
+* ..
+	: two full stops without space represent the folder one level back
+	: `cd ..` with ".." as arguments to `cd` will lead to change of working directory to a directory behind your current working directory.  
+so to navigate to spotidnldr relatively you need to pass `./spotidnldr` as argument to `cd`.
+this means change working directory to **spotindldr** in this **current working directory**.   
+Similarly to go back to `/storage/emulated/0/spotidnldr/` from `/storage/emulated/0/spotidnldr/spotidnldr` we can simply do `cd ..`
+
+### Path to Internal Memory
+ Path to Internal Memory is same for every phone.   
+ `/storage/emulated/0/`  
+
+This path leads to the internal memory of of your phone. You can double check it by using the `ls` command and seeing your internal memory directories and files.
+
+### External MemoryCard/microSD
+ Path to External Storage differs from SD card to SD card. You need to follow some steps to find it.
+
+1. Navigate to root of storage directory.
+```bash
+cd /storage/
+```
+2. Use the `ls` command to find an AlphaNumeric Sequence. That is the path for your external storage.
+3. If you want you can note it or you can follow these steps easily.
+4. To change your working directory to external storage just type
+```bash
+cd <the AlphaNumeric sequence>
+```
+
+### 
