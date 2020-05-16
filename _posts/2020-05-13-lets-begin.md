@@ -3,7 +3,7 @@ layout: post
 title: Termux • Lets-Begin
 categories: [termux]
 tags: [Termux, coding on android]
-last_modified_at: 2019-05-16
+last_modified_at: 2020-05-16
 comments: true
 ---
 
