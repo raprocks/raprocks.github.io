@@ -4,9 +4,11 @@ title: Termux • Lets-Begin
 categories: [termux]
 tags: [Termux, coding on android]
 last_modified_at: 2019-05-16
+comments: true
 ---
 
-So You want to learn coding, but don't know where to start. And above all of this you are in a bigger problem, You don't have a personal computer to code on. **Dont Worry** is what I will say to you. Until you got your Ambition to do something you can do it in any Conditions possible. Today I will introduce to you a very important tool for Android devices that I use on a daily basis. In fact, this whole site and even this post is being written on the tool itself on my Android Device.
+So You want to learn coding, but don't know where to start. And above all of this you are in a bigger problem, You don't have a personal computer to code on. **Dont Worry** is what I will say to you. Until you got your Ambition to do something you can do it in any Conditions possible.
+Today I will introduce to you a very important tool for Android devices that I use on a daily basis. In fact, this whole site and even this post is being written on the tool itself on my Android Device.
 <figure>
 	<img src="/assets/images/lets-begin1.jpg" alt="termux-lets-begin">
 	<figcaption> screenshot taken while i was constructing this post</figcaption>
@@ -216,4 +218,5 @@ cd /storage/
 cd <the AlphaNumeric sequence>
 ```
 
-### 
+# Setup Complete
+ So We have successfully setup termux for further operations. This is the base system that i use for coding on my phone. And hopefully i have shown you a way to Achieve what you want and i will be doing a followup post for this in a few days regarding how to setup Termux with a text editor for writing code and setting up the Python Interpreter. Until Then 👋.
