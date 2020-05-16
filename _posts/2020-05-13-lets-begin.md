@@ -136,6 +136,12 @@ Working on a terminal, you cannot use a GUI(Graphical User Interface) and it is 
 	: usage `touch <relative/absolute path of file to be made with extension>`
 	: remember that it creates empty files and to put data in it we need to use other commands.
 
+# Permissions for Termux
+Just like every other Android app, you need to give termux permissions to storage to access files in internal or external storage. If you wish not to give permissions to storage Termux is Still operable and only works in its own folder in internal memory but these files are inaccessible to the user without termux. Hence, The only sensible step would be to provide it with Storage Permissions. To do so type in the following code in Termux's Terminal and allow the permission.
+```bash
+termux-setup-storage
+```
+Alternatively you can even provide the permissions through the app-info of Termux app. But the method Above will be more easier and will also create some shortcuts for you to navigate easily.
 
 # Paths
 As we are working on an Android Device the file paths are different. We cannot simply go to internal memory or external memory from your current working directory. This is where you need to have the knowledge of paths of Android file system. To navigate among directories you need to use the `cd` command. 
