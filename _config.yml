@@ -1,8 +1,8 @@
 # Setup
 title: RAP's Blog
 tagline: Where You Learn Things
+description: A blog site where you get to learn things in the most simple manner in words a beginner can understand.
 url: https://raprocks.github.io/
-paginate: 1
 baseurl: ""
 permalink: :categories/:title:output_ext
 
