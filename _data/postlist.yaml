@@ -2,5 +2,8 @@ postlist:
   - group: Termux - Lets Start Coding on your Android Device
     posts:
       - title: Let's Begin
-        status: incomplete but okay
+        status: latest
         url: /termux/lets-begin.html
+      - title: Evolution in psuedo-IDE
+        status: coming soon
+        url: /termux/evolution-in-psuedo-ide.html
