@@ -1,8 +1,9 @@
-9---
+---
 layout: post
 title: Evolution in a psuedo IDE
 categories: [termux]
 tags: [text-editor, terminal]
+last_modified_at: 2020-05-18
 ---
 In the [last post](/termux/lets-begin.html) we had setup the Termux terminal emulator for getting ready to transform our phone into a development setup. Here i will show you how to achieve our final goal.
 
@@ -75,5 +76,5 @@ Help for micro is available by pressing Key Combination `Ctrl+g`. A new tab will
 ## Customizing 
 micro supports many themes which are included by default. To set a theme open the Command Bar by pressing, `Ctrl+e`, and then type `set colorscheme`, give a space and then press tab. You will see a list of themes. Keep pressing tab and whenever you think that a theme's name looks good, press Enter on your keyboard, the theme gets applied. 
 
-## winding up.
-This post is quite short but very important.
+## Wrapping Up.
+This post is quite short but very important.We set up the text editor to work partly like an IDE and this will surely speed up our development. In one the next post we will learn how to setup a startup script in Termux so that we automate some tasks when we start a session of Termux. Leave a Comment if you think i missed something or there is a mistake somewhere. ✌️ See you soon.
