@@ -5,6 +5,7 @@ categories: [termux]
 tags: [text-editor, terminal]
 last_modified_at: 2020-05-18
 sharersenable: true
+comments:true
 ---
 In the [last post](/termux/lets-begin.html) we had setup the Termux terminal emulator for getting ready to transform our phone into a development setup. Here i will show you how to achieve our final goal.
 
