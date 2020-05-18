@@ -5,6 +5,7 @@ categories: [termux]
 tags: [Termux, coding on android]
 last_modified_at: 2020-05-16
 comments: true
+sharersenable: true
 ---
 
 So You want to learn coding, but don't know where to start. And above all of this you are in a bigger problem, You don't have a personal computer to code on. **Dont Worry** is what I will say to you. Until you got your Ambition to do something you can do it in any Conditions possible.   
