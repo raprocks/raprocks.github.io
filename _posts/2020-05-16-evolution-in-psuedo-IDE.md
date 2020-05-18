@@ -49,6 +49,9 @@ Basic functions of micro are listed below like opening, saving a file, etc.,
 	: `Ctrl+q` quits the editor 
 	: if you havent saved the file you will get a prompt at the bottom. asking you to save, ignore changes or cancel the quitting operation.
 
+### Autocompletion
+micro has autocompletion implemented mostly everywhere. To use it you just need the correct conditions and a press of the Tab button. `micro` is ***Not*** an IDE. Hence you wont get Autocompletion like the popular IDEs. but it surely reduces the work.  
+
 ## Advanced functions 
 Just like an IDE you can spawn a terminal in the current working directory within `micro` itself. You didnt see it coming did you? 
 ### Terminal Inside Editor.
@@ -70,4 +73,7 @@ You can record a Macro in `micro` by pressing `Ctrl+u`. The start of recording w
 Help for micro is available by pressing Key Combination `Ctrl+g`. A new tab will open with help for micro. Also you can type in help command in the Command Bar to get help.
 
 ## Customizing 
-micro supports many themes which are included by default. To set a theme open the Command Bar by pressing, `Ctrl+e`, and then type `set colorscheme`, give a space and then press tab.  
+micro supports many themes which are included by default. To set a theme open the Command Bar by pressing, `Ctrl+e`, and then type `set colorscheme`, give a space and then press tab. You will see a list of themes. Keep pressing tab and whenever you think that a theme's name looks good, press Enter on your keyboard, the theme gets applied. 
+
+## winding up.
+This post is quite short but very important.
