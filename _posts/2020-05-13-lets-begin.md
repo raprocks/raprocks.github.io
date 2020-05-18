@@ -7,7 +7,8 @@ last_modified_at: 2020-05-16
 comments: true
 ---
 
-So You want to learn coding, but don't know where to start. And above all of this you are in a bigger problem, You don't have a personal computer to code on. **Dont Worry** is what I will say to you. Until you got your Ambition to do something you can do it in any Conditions possible.
+So You want to learn coding, but don't know where to start. And above all of this you are in a bigger problem, You don't have a personal computer to code on. **Dont Worry** is what I will say to you. Until you got your Ambition to do something you can do it in any Conditions possible.   
+
 Today I will introduce to you a very important tool for Android devices that I use on a daily basis. In fact, this whole site and even this post is being written on the tool itself on my Android Device.
 <figure>
 	<img src="/assets/images/lets-begin1.jpg" alt="termux-lets-begin">
@@ -137,6 +138,11 @@ Working on a terminal, you cannot use a GUI(Graphical User Interface) and it is 
 	: cannot create directories, for creating directories use `mkdir`.
 	: usage `touch <relative/absolute path of file to be made with extension>`
 	: remember that it creates empty files and to put data in it we need to use other commands.
+* exit
+	: command for exiting a session in Temrux.
+	: usage `exit`
+	: Same functionality can be obtained by pressing `Ctrl+d`
+	: thanks for pointing it out [@shivamsn97](github.com/shivamsn97)
 
 # Permissions for Termux
 Just like every other Android app, you need to give termux permissions to storage to access files in internal or external storage. If you wish not to give permissions to storage Termux is Still operable and only works in its own folder in internal memory but these files are inaccessible to the user without termux. Hence, The only sensible step would be to provide it with Storage Permissions. To do so type in the following code in Termux's Terminal and allow the permission.
