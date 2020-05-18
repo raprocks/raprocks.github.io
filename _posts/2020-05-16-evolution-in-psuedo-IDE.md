@@ -5,8 +5,9 @@ categories: [termux]
 tags: [text-editor, terminal]
 last_modified_at: 2020-05-18
 sharersenable: true
-comments:true
+comments: true
 ---
+
 In the [last post](/termux/lets-begin.html) we had setup the Termux terminal emulator for getting ready to transform our phone into a development setup. Here i will show you how to achieve our final goal.
 
 You may be wondering, what do i mean by a Psuedo IDE. Let's be realistic and think that working on a phone will never be same as working on a full workstation. You wont have the whole GUI, No VS code or other IDEs and morever no physical keyboard. But until the end of this post you may have achieved a part of what a workstation consists.
