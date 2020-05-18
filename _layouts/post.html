@@ -27,7 +27,7 @@ layout: default
   </time>{% if page.link %}<span class="external-link">External Link</span>{% endif %}
   
   {{ content | smartify }}
-<div>
+<div id="sharers">
   {% if page.sharersenable %}
   	{% include sharers.html %}
   {% endif %}
