@@ -1,4 +1,4 @@
----
+9---
 layout: post
 title: Evolution in a psuedo IDE
 categories: [termux]
@@ -10,7 +10,7 @@ You may be wondering, what do i mean by a Psuedo IDE. Let's be realistic and thi
 
 A few things which are needed to perform this task will be
 * a text editor
-	: Here we will use **micro**
+	: For our setup we will use **micro**
 * the packages needed for our developmental tasks
 	: I work with python so i will setup this whole thing for python but will list the packages for different setups. if i miss something do comment and i will update the list.
 ## Installation of Required Packages
@@ -61,3 +61,13 @@ No. Don't do this recurring task. Open a terminal window in your editor to run t
 This is a good way to reduce the wastage of time between the trial runs of the programs you are working on.  
 Also in Termux you have access to sessions and it provides you with another way if you want to access the terminal. 
 <figure><img src="/assets/images/evolution-sessions.jpg" alt="sessions in Termux"><figcaption>Sessions in Termux</figcaption></figure>
+
+### Macros 
+Macros are a set of specific instruction which can be performed automatically by issuing cetain steps totally independent of the former steps. for example, if you wish to insert a specific text "dummy" on the press of a button you can record the insertion of the text and press the button to insert it. or you wish to do something else like pressing one button to do some task which you are doing multiple times and each time it is taking a lot of time.
+You can record a Macro in `micro` by pressing `Ctrl+u`. The start of recording will be indicated by a message in the Command Bar. Press the same key combination, `Ctrl+u`, to stop recording the macro. Now whenever you want to execute the steps you recorded, just press `Ctrl+j` and you will see the effect immediately.  
+
+### Help for micro
+Help for micro is available by pressing Key Combination `Ctrl+g`. A new tab will open with help for micro. Also you can type in help command in the Command Bar to get help.
+
+## Customizing 
+micro supports many themes which are included by default. To set a theme open the Command Bar by pressing, `Ctrl+e`, and then type `set colorscheme`, give a space and then press tab.  
