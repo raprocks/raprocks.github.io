@@ -5,5 +5,5 @@ postlist:
         status: complete
         url: /termux/lets-begin.html
       - title: Evolution in psuedo-IDE
-        status: complete, latest
+        status: latest
         url: /termux/evolution-in-psuedo-IDE.html
