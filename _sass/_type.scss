@@ -52,7 +52,12 @@ p {
 ul, ol, dl {
   margin-top: 0;
 }
-
+ul {
+	list-style-type: circle;
+	list-style-position:inside;
+	padding:10px;
+	
+}
 dt {
   font-weight: bold;
   font-size:1.5em;
