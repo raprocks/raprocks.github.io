@@ -3,6 +3,9 @@ layout: post
 categories: [linux, shell scripting]
 tags: [dotfiles, shell scripting]
 title: Dotfiles - Automating System Startup Tasks
+comments: true
+sharersenable: true
+last_modified_at: 2020-05-20
 ---
 
 If you are a beginner or a experienced developer, you must be at least once during your cruise, fed up of doing things repeatedly. In linux, Dot files come to your rescue. In this post you will learn how to set them up, customize them, and make absolute macros all by yourself.
