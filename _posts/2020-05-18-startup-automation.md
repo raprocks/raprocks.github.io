@@ -70,7 +70,7 @@ Remember to  keep the alias name and commnd in quotes, as shown in the example a
 
 You can also print all aliases set into your system by using the `alias` command without an argument.
 ```bash
-alais
+alias
 ```
 
 Thats all about aliases. Aliases are nothing but nicknames for long commands so that you dont have to type all that long things.
