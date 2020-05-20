@@ -5,5 +5,10 @@ postlist:
         status: complete
         url: /termux/lets-begin.html
       - title: Evolution in psuedo-IDE
-        status: latest
+        status: complete
         url: /termux/evolution-in-psuedo-IDE.html
+  - group: Using the Terminal
+    posts:
+      - title: Bash Startup Automation
+        status: latest
+        url: /linux/shell%20scripting/startup-automation.html
