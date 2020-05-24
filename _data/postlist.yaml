@@ -12,3 +12,7 @@ postlist:
       - title: Bash Startup Automation
         status: latest
         url: /linux/shell%20scripting/startup-automation.html
+  - group: Git - The Version Control
+    posts:
+      - title: Git -The Basics
+        status: coming soon
