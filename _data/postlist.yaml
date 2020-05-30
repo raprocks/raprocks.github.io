@@ -10,9 +10,10 @@ postlist:
   - group: Using the Terminal
     posts:
       - title: Bash Startup Automation
-        status: latest
+        status: complete
         url: /linux/shell%20scripting/startup-automation.html
   - group: Git - The Version Control
     posts:
       - title: Git -The Basics
-        status: coming soon
+        url: /git/Using-Git-The-Basics.html
+        status: latest
