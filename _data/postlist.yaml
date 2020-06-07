@@ -14,6 +14,10 @@ postlist:
         url: /linux/shell%20scripting/startup-automation.html
   - group: Git - The Version Control
     posts:
-      - title: Git -The Basics
+      - title: Git - The Basics
         url: /git/Using-Git-The-Basics.html
-        status: latest
+        status: completed
+        micropost:
+          - title: Simplify Workings Using SSH
+            url: /git/github/Simplify-Workings-Using-SSH.html
+            status: latest

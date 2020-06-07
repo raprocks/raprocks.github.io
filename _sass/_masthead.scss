@@ -94,20 +94,26 @@ nav {
 }
 
 .postlist .category-title::before {
-	content:"•"
+	content:"• "
 }
 
 ul.sublist1 {
-	list-style-type: "••";
+	list-style-type: "•• ";
 	list-style-position: inside;
 
 	li {
-		font-size: 0.7em;
+		font-size: 0.8em;
 		padding-left:20px;
 	}
 }
 
 ul.sublist2 {
-	list-style-type: "•••";
-	list-style-position:inside;
+	list-style-type: "••• ";
+	list-style-position: inside;
+	li {
+		font-size: 0.6em;
+		a {
+		padding: 0 0.3rem;
+		}
+	}
 }
