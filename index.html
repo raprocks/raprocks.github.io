@@ -2,7 +2,16 @@
 layout: default
 title: Home
 ---
-
+<script>
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("/service-worker.js", { scope: "./" }).then(function(registration) {
+        
+    }).catch(function(error) {
+        alert("Could not register service worker! This application will not be able to run in offline mode.");
+        alert(error);
+          });
+    }
+</script>
 <section class="hero">
     <h3 class="hi">Hi</h3>
     <h3>Welcome to the Blog.</h3>

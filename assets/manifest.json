@@ -1,0 +1,26 @@
+{
+
+  "author": "RAP's Blog",
+  "background_color": "#000000",
+  "description": "A simple Progressive Web Application",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "apple-touch-icon-precomposed.png",
+      "sizes": "180x180",
+      "type": "image/png"
+
+    }
+
+  ],
+
+  "lang": "en-IN",
+  "name": "rap blog",
+  "orientation": "portrait",
+  "scope": "./",
+  "short_name": "rapsblog",
+  "start_url": "index.html",
+  "theme_color": "#0099ff",
+  "version": "0.202"
+
+}
