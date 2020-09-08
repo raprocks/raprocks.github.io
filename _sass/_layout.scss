@@ -27,6 +27,22 @@ ul.social {
 	}
 }
 
+.first {
+    color: orange;
+    position: relative;
+    color: $code-light;
+    float: left;
+    top: 0px;
+    font-family: Georgia;
+    font-size: 4rem;
+    line-height: 3rem;
+    padding-top: 0px;
+    padding-left: 3px;
+    @media (prefers-color-scheme: dark) {
+        color: $code-dark;
+    }
+}
+
 ul.social li {
 	display: inline-block;
 	padding: 10px;

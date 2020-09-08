@@ -20,4 +20,10 @@ postlist:
         micropost:
           - title: Simplify Workings Using SSH
             url: /git/github/Simplify-Workings-Using-SSH.html
-            status: latest
+            status: completed
+  - group: Python - Not The Snake!
+    posts:
+      - title: Introduction, Why and How?
+        url: /still-working
+        status: coming-soon
+

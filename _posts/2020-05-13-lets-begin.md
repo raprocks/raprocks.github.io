@@ -8,7 +8,7 @@ comments: true
 sharersenable: true
 ---
 
-So You want to learn coding, but don't know where to start. And above all of this you are in a bigger problem, You don't have a personal computer to code on. **Dont Worry** is what I will say to you. Until you got your Ambition to do something you can do it in any Conditions possible.   
+<span class="first">S</span>o You want to learn coding, but don't know where to start. And above all of this you are in a bigger problem, You don't have a personal computer to code on. **Dont Worry** is what I will say to you. Until you got your Ambition to do something you can do it in any Conditions possible.   
 
 Today I will introduce to you a very important tool for Android devices that I use on a daily basis. In fact, this whole site and even this post is being written on the tool itself on my Android Device.
 <figure>

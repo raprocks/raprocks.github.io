@@ -8,7 +8,7 @@ comment: true
 sharersenable: true
 ---
 
-Git is one of the Leading Revision Control Systems nowadays. But Using it's CLI tool is sometimes a Big Headache. Read On to get going with basics of Git's CLI tool.  
+<span class="first">G</span>it is one of the Leading Revision Control Systems nowadays. But Using it's CLI tool is sometimes a Big Headache. Read On to get going with basics of Git's CLI tool.  
 
 # What is a Revision Control System?
 A system which helps you keep track of the changes you do in a piece of software and if something goes wrong, lets you go back to the previous working state is roughly what is called a Revision Control System. The system helps you keep track of what changes you did along with the differences between two _**snapshots**_ of a certain file.

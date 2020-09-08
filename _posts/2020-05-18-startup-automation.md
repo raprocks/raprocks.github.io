@@ -8,7 +8,7 @@ sharersenable: true
 last_modified_at: 2020-05-20
 ---
 
-If you are a beginner or a experienced developer, you must be at least once during your cruise, fed up of doing things repeatedly. In linux, Dot files come to your rescue. In this post you will learn how to set them up, customize them, and make absolute macros all by yourself.
+<span class='first'>I</span>f you are a beginner or a experienced developer, you must be at least once during your cruise, fed up of doing things repeatedly. In linux, Dot files come to your rescue. In this post you will learn how to set them up, customize them, and make absolute macros all by yourself.
 
 ## ‘.’ Files
 As the Name suggests these files start with a '.' prefix. Any file that starts with a '.' is hidden. There are files in your phone's internal memory even now that start with a fullstop and you cant find them. Some of them are Important, some not so much. But in the context of linux dot files are something different.

@@ -45,3 +45,9 @@ github:
   repo: https://github.com/raprocks/raprocks.github.io
 
 ga_analytics: UA-166606296-1
+
+# highlighter and stuff
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+highlighter: rouge

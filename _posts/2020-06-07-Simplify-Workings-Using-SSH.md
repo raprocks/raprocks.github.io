@@ -8,11 +8,11 @@ sharersenable: true
 last_modified_at: 2020-06-07
 ---
 
-Copying and Pasting the git OAuth token everytime you push to your remote repo quuckly becomes tiresome when you are pushing hundreds of time a day. Thankfully Github provides SSH support for increasing your efficiency.
+<span class="first">C</span>opying and Pasting the git OAuth token every time you push to your remote repository quickly becomes tiresome when you are pushing hundreds of time a day. Thankfully Github provides SSH support for increasing your efficiency.
 
 # What even is SSH?
 SSH stands for **S**ecure **SH**ell. It is a network protocol that gives you a secure shell through a unsecured connection. SSH can provide you with a remote command-line and/or let you transfer data across a client-server network. The client most of the time being you and the server the other user. For Github:-
-> Using the SSH protocol, you can connect and authenticate to remote servers and services. With SSH keys, you can connect to GitHub without supplying your username or password at each visit.  
+> Using the SSH protocol, you can connect and authenticate to remote servers and services. With SSH keys, you can connect to GitHub without supplying your username or password at each visit.
 > ~ Github
 
 # Setting up SSH credentials.
@@ -37,13 +37,14 @@ check the Using The Keys section.
 The output of the above command if throws an error or does not give any output then you dont have any keys so read on go to learn how to create one.
 
 ##### Creating keys
-1. `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`   
+1. `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
 Replace your email in the placeholder and you will have created a ssh key. To make it work with Github, Use your Email associated with Github.
 2. After it asks where to save file just press enter to save it to the default location. 
 ```bash
 Enter file in which to save the key (/data/data/com.termux/files/home/.ssh/id_rsa):
 ```
-3. ```bash
+3.
+```bash
 > Enter passphrase (empty for no passphrase): [Type a passphrase]
 > Enter same passphrase again: [Type passphrase again]
 ```

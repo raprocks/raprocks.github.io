@@ -1,237 +1,177 @@
-// Code blocks and syntax highlighting
+﻿// // Code blocks and syntax highlighting
 
-/* Applies to inline `code blocks` */
+// /* Applies to inline `code blocks` */
 .highlighter-rouge {
     font-family: $root-font-family;
-	font-size: 100%;
-	padding: 3px 4px;
+    padding: 0.3em 1em;
+    margin: 20px 0px;
     background-color: #e0e0e0;
-    border-radius: 10px;
     color: $code-light;
-	white-space: normal;
-	
-@media (prefers-color-scheme: dark) {
-    background-color: #212c2d;
-	color: $code-dark;
-	}
+    @media (prefers-color-scheme: dark) {
+        background-color: $code-bg;
+        color: $code-dark;
+    }
+    border-radius: 3px;
 }
 
-/* Applies to all code */
-pre, code {
-    font-size: 14px;
-    font-family: $code-font-family;
-    font-style: normal;
-
+pre,code {
     font-feature-settings: "kern" off;
     font-kerning: none;
     font-variant: none;
-
-    background-color: #eef;
-
+    
     ::selection {
         color: $code-bg;
-        background: #bdbdb3;
+        background-color: $code-dark;
     }
 
     ::-moz-selection {
         color: $code-bg;
-        background: #bdbdb3;
+        background-color: $code-dark;
     }
 
     ::-webkit-selection {
         color: $code-bg;
-        background: #bdbdb3;
+        background-color: $code-dark;
     }
 }
-
-/* Inline code, no highlight */
-code {
-    padding: 2px 4px;
-    border-radius: 3px;
-
+/* Inline code, highlight */
+code.highlighter-rouge {
     white-space: nowrap;
+    padding: 0.2em 0.2em;
 }
 
 blockquote code {
-    color: #656565;
-}
-
-/* Inline code, highlight */
-code.highlight {
-    border-radius: 3px;
-
-    color: #bdbdb3;
-    background-color: $code-bg;
+     color: #656565;
 }
 
 /* Block code, no highlight */
-pre {
-    border-radius: 5px;
+pre.highlight {
+    overflow-x: auto;
     margin: 30px * 0.75 30px / 2;
     padding: 15px 17px;
     overflow-x: auto;
-    background-color: #f1f1ff;
 
     code {
         border: 0;
         padding: 0;
-
         white-space: pre;
     }
 }
 
-/* Block code, highlight */
-figure.highlight, div.highlight {
-    position: relative;
-
-    pre {
-        background-color: $code-bg;
-		border: 1px solid $code-light;
-	    border-radius: 15px;
-		box-shadow: 0 4px 30px rgba(0,0,0,.4);
-		
-		@media (prefers-color-scheme: dark) {
-		border: 1px solid $code-dark;
-		}
-		
-        code {
-            background-color: $code-bg;
-            color: #bdbdb3;
-
-            counter-reset: code;
-            display: block;
-            line-height: 1.5;
-
-            /* Display language name */
-            &[data-lang]::before {
-                content: attr(data-lang);
-                position: absolute;
-                right: 20px; // 15 + 5
-
-                font-size: 16px;
-                top: -12px;
-				padding: 0px 7px;
-				text-transform: uppercase;
-				font-weight: bold;
-
-                border: 1px solid $code-light;
-                border-top-left-radius: 15px;
-                border-top-right-radius: 15px;
-                border-bottom-left-radius: 15px;
-                border-bottom-right-radius: 15px;
-
-                min-width: 30px;
-                text-align: center;
-
-                color: $code-light;
-                background-color: $code-bg;
-				
-				@media (prefers-color-scheme: dark) {
-				border: 1px solid $code-dark;
-				color: $code-dark;
-				}
-				
-				@mixin media-query($device) {
-				@media screen and (max-width: $device) {
-				@content;
-				}
-			}
-
-                @include media-query(300px) {
-                    visibility: hidden;
-                }
-            }
-
-            div {
-                counter-increment: code;
-
-                /* Line numbers */
-                &::before {
-                    color: #608079;
-                    content: counter(code);
-
-                    width: 14px;
-                    text-align: right;
-
-                    /* Add a nice border */
-                    display: inline-block;
-                    padding-right: 30px / 4;
-                    margin-right: 30px * 0.4;
-                    border-right: 1px solid #656565;
-
-                    /* For older browsers and Safari */
-                    -webkit-touch-callout: none;
-                    -webkit-user-select: none;
-                    -khtml-user-select: none;
-                    -moz-user-select: none;
-                    -ms-user-select: none;
-                    user-select: none;
+figure.highlight pre code {
+            overflow-x: hidden;
+            background-color: yellow;
+            table {
+                display:block;
+                width:inherit;
+                tbody {
+                    tr {
+                        td.code {
+                            width: 20px;
+                            pre {
+                                margin: 30px * 0.75 30px / 2;
+                                padding: 15px 17px;
+                            }
+                        }
+                    }
                 }
             }
         }
-    }
-}
 
-/* Hide language */
-.hide-lang + figure code::before {
-    visibility: hidden;
-}
+// /* Block code, highlight */
+// figure.highlight, div.highlight {
+//     position: relative;
 
-/**
- * Language-specific settings
- */
+//     pre {
+//         background-color: $code-bg;
+// 		border: 1px solid $code-light;
+// 	    border-radius: 5px;
+// 		box-shadow: 0 4px 30px rgba(0,0,0,.4);
+		
+// 		@media (prefers-color-scheme: dark) {
+// 		border: 1px solid $code-dark;
+// 		}
+		
+//         code {
+//             background-color: $code-bg;
+//             color: #bdbdb3;
+//             counter-reset: code;
+//             display: block;
+//             line-height: 1.5;
+//             /* Display language name */
+//             &[data-lang]::before {
+//                 content: attr(data-lang);
+//                 position: absolute;
+//                 right: 20px; // 15 + 5
+//                 font-size: 16px;
+//                 top: -12px;
+//                 padding: 0px 7px;
+//                 text-transform: uppercase;
+//                 font-weight: bold;
+//                 border: 1px solid $code-light;
+//                 border-top-left-radius: 15px;
+//                 border-top-right-radius: 15px;
+//                 border-bottom-left-radius: 15px;
+//                 border-bottom-right-radius: 15px;
+//                 min-width: 30px;
+//                 text-align: center;
+//                 color: $code-light;
+//                 background-color: $code-bg;
+				
+// 				@media (prefers-color-scheme: dark) {
+// 				border: 1px solid $code-dark;
+// 				color: $code-dark;
+// 				}
+				
+// 				@mixin media-query($device) {
+// 				@media screen and (max-width: $device) {
+// 				@content;
+// 				}
+// 			}
 
-.language-liquid {
-    .p {
-        color: #6aaf50;
-    }
-}
+//                 @include media-query(300px) {
+//                     visibility: hidden;
+//                 }
+//             }
 
-/**
- * ID-specific overrides
- */
+//             div {
+//                 counter-increment: code;
+//                 display: inline-block;
 
-#c-example + figure {
-    .kt {
-        color: #5180b3;
-    }
-}
+//                 /* Line numbers */
+//                 &:before {
+//                     color: #608079;
+//                     content: counter(code);
 
-#liquid-example + figure {
-    .p {
-        color: #bdbdb3;
-    }
-}
+//                     width: 14px;
+//                     text-align: right;
 
-#borders-example + figure {
-    div {
-        &::before {
-            padding-left: 0.625em;
-            border-left: 1px solid #656565;
-        }
+//                     /* Add a nice border */
+//                     display: inline-block;
+//                     padding-right: 30px / 4;
+//                     margin-right: 30px * 0.4;
+//                     border-right: 1px solid #656565;
 
-        &:first-of-type::before {
-            padding-top: 0.25em;
-            border-top: 1px solid #656565;
-            border-top-left-radius: 4px;
-            border-top-right-radius: 4px;
-        }
+//                     /* For older browsers and Safari */
+//                     -webkit-touch-callout: none;
+//                     -webkit-user-select: none;
+//                     -khtml-user-select: none;
+//                     -moz-user-select: none;
+//                     -ms-user-select: none;
+//                     user-select: none;
+//                 }
+//             }
+//         }
+//     }
+// }
 
-        &:last-of-type::before {
-            padding-bottom: 0.25em;
-            border-bottom: 1px solid #656565;
-            border-bottom-left-radius: 4px;
-            border-bottom-right-radius: 4px;
-        }
-    }
-}
+// /* Hide language */
+// .hide-lang + figure code::before {
+//     visibility: hidden;
+// }
 
-#yaml-example + figure {
-    .na, .s {
-        color: #ab75c3;
-    }
-}
 
-.hl-1 + figure .line-1 {
-    background-color: #112b47;
+td.gutter.gl{
+    width: auto;
+    text-align: right;
 }
