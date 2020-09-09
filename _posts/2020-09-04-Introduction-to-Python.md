@@ -95,13 +95,6 @@ with open('rates.txt', 'w+') as fd:
 {% endhighlight %}
 
 
-```
-python btuhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
-```
-
-
-
-
 Just one Line of code and you have entered the Programming World!
 
 ## Wrapping Up
