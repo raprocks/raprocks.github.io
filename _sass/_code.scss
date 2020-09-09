@@ -1,4 +1,4 @@
-﻿// // Code blocks and syntax highlighting
+﻿// Code blocks and syntax highlighting
 
 // /* Applies to inline `code blocks` */
 .highlighter-rouge {
@@ -58,7 +58,7 @@ pre.highlight {
     }
 }
 
-figure.highlight pre code {
+/*figure.highlight pre code {
             overflow-x: hidden;
             background-color: yellow;
             table {
@@ -71,107 +71,112 @@ figure.highlight pre code {
                             pre {
                                 margin: 30px * 0.75 30px / 2;
                                 padding: 15px 17px;
-                            }
-                        }
                     }
                 }
             }
         }
-
-// /* Block code, highlight */
-// figure.highlight, div.highlight {
-//     position: relative;
-
-//     pre {
-//         background-color: $code-bg;
-// 		border: 1px solid $code-light;
-// 	    border-radius: 5px;
-// 		box-shadow: 0 4px 30px rgba(0,0,0,.4);
-		
-// 		@media (prefers-color-scheme: dark) {
-// 		border: 1px solid $code-dark;
-// 		}
-		
-//         code {
-//             background-color: $code-bg;
-//             color: #bdbdb3;
-//             counter-reset: code;
-//             display: block;
-//             line-height: 1.5;
-//             /* Display language name */
-//             &[data-lang]::before {
-//                 content: attr(data-lang);
-//                 position: absolute;
-//                 right: 20px; // 15 + 5
-//                 font-size: 16px;
-//                 top: -12px;
-//                 padding: 0px 7px;
-//                 text-transform: uppercase;
-//                 font-weight: bold;
-//                 border: 1px solid $code-light;
-//                 border-top-left-radius: 15px;
-//                 border-top-right-radius: 15px;
-//                 border-bottom-left-radius: 15px;
-//                 border-bottom-right-radius: 15px;
-//                 min-width: 30px;
-//                 text-align: center;
-//                 color: $code-light;
-//                 background-color: $code-bg;
-				
-// 				@media (prefers-color-scheme: dark) {
-// 				border: 1px solid $code-dark;
-// 				color: $code-dark;
-// 				}
-				
-// 				@mixin media-query($device) {
-// 				@media screen and (max-width: $device) {
-// 				@content;
-// 				}
-// 			}
-
-//                 @include media-query(300px) {
-//                     visibility: hidden;
-//                 }
-//             }
-
-//             div {
-//                 counter-increment: code;
-//                 display: inline-block;
-
-//                 /* Line numbers */
-//                 &:before {
-//                     color: #608079;
-//                     content: counter(code);
-
-//                     width: 14px;
-//                     text-align: right;
-
-//                     /* Add a nice border */
-//                     display: inline-block;
-//                     padding-right: 30px / 4;
-//                     margin-right: 30px * 0.4;
-//                     border-right: 1px solid #656565;
-
-//                     /* For older browsers and Safari */
-//                     -webkit-touch-callout: none;
-//                     -webkit-user-select: none;
-//                     -khtml-user-select: none;
-//                     -moz-user-select: none;
-//                     -ms-user-select: none;
-//                     user-select: none;
-//                 }
-//             }
-//         }
-//     }
-// }
-
-// /* Hide language */
-// .hide-lang + figure code::before {
-//     visibility: hidden;
-// }
-
-
-td.gutter.gl{
-    width: auto;
-    text-align: right;
+    }
+}*/
+table.rouge-table {
+    width: 100%;
+    table-layout: fixed;
+    padding:1em;
+    margin:0;
 }
+table.rouge-table tbody tr {
+    td.gutter.gl {
+        width: 2.5em;
+        border-right: 3px solid grey;
+        pre.lineno {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    }
+    td.code {
+        pre {
+            overflow-x:scroll;
+        }
+    }
+}
+
+figure.highlight > pre {
+    border: 2px solid $code-light;
+    padding: 0em 0em;
+    @media (prefers-color-scheme: dark) {
+        border: 1px solid $code-dark;
+    }
+}
+
+figure.highlight {
+    postion: relative;
+    pre {
+        border-radius: 26px;
+        code {
+            display: block;
+            line-height: 1.5;
+            &[data-lang]::before {
+                content: attr(data-lang);
+                position: relative;
+                left: 20px;
+                top: -12px;
+                font-size: 18px;
+            }
+        }
+    }
+}
+// /* Block code, highlight */
+figure.highlight {
+    position: relative;
+    pre {
+	    border-radius: 5px;
+		box-shadow: 0 4px 30px rgba(0,0,0,.4);
+ 	
+        code {
+            background-color: $code-bg;
+            counter-reset: code;
+            display: block;
+            line-height: 1.5;
+            /* Display language name */
+            &[data-lang]::before {
+                content: attr(data-lang);
+                position: absolute;
+                right: 20px; // 15 + 5
+                font-size: 16px;
+                top: -12px;
+                padding: 0px 7px;
+                text-transform: uppercase;
+                font-weight: bold;
+                border: 1px solid $code-light;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                border-bottom-left-radius: 15px;
+                min-width: 30px;
+                text-align: center;
+                color: $code-light;
+                background-color: $code-bg;
+ 			
+                border-bottom-right-radius: 15px;
+				@media (prefers-color-scheme: dark) {
+				border: 1px solid $code-dark;
+				color: $code-dark;
+				}
+ 			
+				@mixin media-query($device) {
+				@media screen and (max-width: $device) {
+				@content;
+				}
+			}
+
+                @include media-query(300px) {
+                    visibility: hidden;
+                }
+            }
+}
+}
+}
+
+
