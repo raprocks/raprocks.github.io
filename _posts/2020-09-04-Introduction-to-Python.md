@@ -69,33 +69,36 @@ thats all you need to know for now. As we move forward we will get to know other
 It is more of a ritual in the programming world to make a program that gives a "Hello World!" output when you start working on a new language. Lets write our first Python Program.
 
 {% highlight python linenos %}
-import webbrowser
-from tqdm import tqdm
-
-with open('url_finale.txt') as fd:
-    urls = fd.read()
-
-urls = urls.split('\n')
-rates = []
-
-for each in tqdm(urls):
-    print(each)
-    input("go?")
-    webbrowser.open(each)
-    res = input("rateeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeexxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxs?")
-    if "y" in res.lower():
-        rates.append(each)
-    else:
-        pass
-
-print(rates)
-
-with open('rates.txt', 'w+') as fd:
-    fd.write('\n'.join(rates))
+print("Hello World!")
 {% endhighlight %}
 
 
 Just one Line of code and you have entered the Programming World!
 
+Now the same in *"c"* would be
+
+{% highlight c linenos %}
+#include<stdio.h>
+
+int main(){
+    printf("Hello World!");
+    return 0;
+}
+{% endhighlight %}
+
+or in *"C++"* 
+{% highlight c++ linenos %}
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    cout<<"Hello World"<<endl;
+    return 0;
+}
+{% endhighlight %}
+
+now i can give you many more examples but i thing you get the idea that python would be your best choice while starting out programming just for understanding the basics.
+
 ## Wrapping Up
-Short and Sweet. Do Comment if you need help doing anything. Ping me on my socials. Thank you for reading. Onwards Towards <span class="soon">**Data Structures**.</span>.
+Short and Sweet. Do Comment if you need help doing anything. Ping me on my socials. Thank you for reading. Onwards Towards <span class="soon">soon</span>**Data Structures**.
